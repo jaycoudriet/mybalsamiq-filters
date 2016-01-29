@@ -1,0 +1,13 @@
+.hide {display:none;}
+
+#ge-filter-bar {
+    text-align: right;
+    padding-right: 20px;
+    margin-top: -40px;
+}
+
+#ge-filter-bar input, #ge-filter-bar select {
+    display: inline-block;
+    padding: 2px;
+    margin-right: 10px;
+}
