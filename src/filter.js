@@ -16,7 +16,7 @@ function filterProjectList () {
     }
   });
   
-  //hide the remaining projects that don't match the cover fitler
+  //hide the remaining projects that don't match the cover filter
   $("#project_browser li:not(."+ strCover +")").addClass('hide');
   
 }
