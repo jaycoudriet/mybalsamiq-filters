@@ -1,15 +1,16 @@
 function filterProjectList () {
-  	strSearchtext = $("#ge-search").val().toLowerCase();
+  strSearchtext = $("#ge-search").val().toLowerCase();
 	strCover =  $("#ge-cover-filter").val()
 
 	//loop and show matches then hide others
 	$("#project_browser li").each(function(i,v) {
 	  	var currentProjectItem = $(this).attr("id");
 	    	var currentProjectText = $("#" + currentProjectItem + " .pname").text().toLowerCase();
-	
-	    	if (currentProjectText.indexOf(strSearchtext) > -1)  {
+	   
+      if (currentProjectText.indexOf(strSearchtext) > -1)  {
 	    		$(this).removeClass("hide");
-	    	}
+
+      	}
 	    	else
 	    	{
 	    		$(this).addClass("hide");
@@ -32,6 +33,8 @@ function initProjectFilter () {
 	//Add the search bar
     	$("#project-browser").before("<div id='ge-filter-bar' placeholder='Filter by project name'><input id='ge-search' ><select id='ge-cover-filter'><option value=''>All</option></select></div>");
     
+      $("#ge-search").focus();
+
     	//Add the events to the filter inputs
     	$("#ge-search").keyup(function(e) {
 		filterProjectList();

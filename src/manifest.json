@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "myBalsamiq Filters",
   "description": "Easily filter Balsamiq projects by project name or cover.",
-  "version": "1.2",
+  "version": "1.5",
   "content_scripts": [
     {
       "matches": ["https://*.mybalsamiq.com/projects","https://*.mybalsamiq.com/archives"],
